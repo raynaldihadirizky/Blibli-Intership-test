@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .product-card-container {
+            width: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-card {
+            display: flex;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .next-button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card-container">
+        <div class="product-card">
+            <img src="download.png" alt="Product 1">
+            <img src="download.png" alt="Product 2">
+            <img src="download.png" alt="Product 3">
+            <!-- Add more product images as needed -->
+        </div>
+        <button class="next-button" onclick="scrollNext()">Next</button>
+    </div>
+</body>
+    <script>
+        const productCardContainer = document.querySelector('.product-card-container');
+        const productCard = document.querySelector('.product-card');
+        const nextButton = document.querySelector('.next-button');
+        let scrollPosition = 0;
+
+        function scrollNext() {
+            scrollPosition += 30;
+            if (scrollPosition >= productCard.scrollWidth - productCardContainer.clientWidth) {
+                // Hide the next button if there's no more content to scroll
+                nextButton.style.display = 'none';
+            } else {
+                nextButton.style.display = 'block';
+            }
+            productCard.style.transform = `translateX(-${scrollPosition}px)`;
+        }
+    </script>
+
+</html>

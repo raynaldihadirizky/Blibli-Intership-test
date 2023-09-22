@@ -1,0 +1,29 @@
+1. What is a JavaScript Framework and explain about Vue.js as one of the JavaScript Framework!
+    answer : basically JavaScript Framework is a set of tools and guidelines for building web app. 
+             one example is Vue.js, a front-end framework for building user interface
+
+2. What is the use of ellipsis?
+    answer :  as a syntax feature for specific operations within the JavaScript language.
+
+3. Explain animation properties below:
+    a. @keyframe
+        answer : to describe how an element should change its style or time during the animation
+    b. animation-name
+        answer : a name for the @keyframe animation 
+    c. animation-duration
+        answer : to defines how long an animation should take to complete.
+    d. animation-iteration
+        answer : to specifies the number of times an animation should run.
+    e. animation-direction
+        answer : to specifies the animation direction should take. 
+
+4. Please explain how lazy load works in JavaScript!
+    answer : by delaying the loading of images and then loading them when the user scrolls to 
+             the location where the image enters the viewport.
+
+5. Mention at least 5 git commands and describe each function of them!
+    answer : 1. git --version : to get the installed version of Git
+             2. git config user.email : to set the user email for the current repository
+             3. git status : to get the current status of the Git repository
+             4. git init : to initialize Git on the current repository
+             5. git push origin : to push the current repository to the remote origin
